@@ -37,4 +37,10 @@ register = async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 };
+fuck = async (req, res, next) => {
+  return res.status(200).send({
+    status: "sucess",
+    message: "FucK you",
+  });
+};
 module.exports = { login, register };
