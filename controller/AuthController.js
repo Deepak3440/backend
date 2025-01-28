@@ -38,6 +38,7 @@ register = async (req, res) => {
   }
 };
 test = async (req, res, next) => {
+  console.log("test");
   return res.status(200).send({
     status: "sucess",
     message: "FucK you",
