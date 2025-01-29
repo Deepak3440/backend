@@ -10,7 +10,7 @@ connectDB();
 
 app.use("/api/auth", authRoutes); // Set up the auth routes
 
-const PORT = process.env.PORT || "0.0.0.0";
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
