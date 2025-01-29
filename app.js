@@ -5,7 +5,7 @@ const morgan = require("morgan");
 
 const app = express();
 app.use(express.json());
-app.use(morgan("dev"));
+// app.use(morgan("dev"));
 connectDB();
 
 app.use("/api/auth", authRoutes); // Set up the auth routes
